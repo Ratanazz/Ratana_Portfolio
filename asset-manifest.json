@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Ratana_Portfolio/static/css/main.d13c4050.css",
+    "main.js": "/Ratana_Portfolio/static/js/main.44237ed0.js",
+    "static/media/moviebooking2.jpg": "/Ratana_Portfolio/static/media/moviebooking2.0e96726a8a80b3b8564b.jpg",
+    "static/media/schoolsystem.png": "/Ratana_Portfolio/static/media/schoolsystem.1018faa615b6aa84bd30.png",
+    "static/media/petadopt.png": "/Ratana_Portfolio/static/media/petadopt.46c46189fd4f6291ec7e.png",
+    "static/media/pcstore.jpg": "/Ratana_Portfolio/static/media/pcstore.dace86b49b26156e3de2.jpg",
+    "static/media/movierating.jpg": "/Ratana_Portfolio/static/media/movierating.ebf7475feee151387fb6.jpg",
+    "static/media/me2.jpg": "/Ratana_Portfolio/static/media/me2.a793bc7f7a5f43a23437.jpg",
+    "static/media/test.jpg": "/Ratana_Portfolio/static/media/test.d17c4d13262e509adc80.jpg",
+    "index.html": "/Ratana_Portfolio/index.html",
+    "main.d13c4050.css.map": "/Ratana_Portfolio/static/css/main.d13c4050.css.map",
+    "main.44237ed0.js.map": "/Ratana_Portfolio/static/js/main.44237ed0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d13c4050.css",
+    "static/js/main.44237ed0.js"
+  ]
+}

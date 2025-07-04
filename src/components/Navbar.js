@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <>
-      {/* This wraps the navbar */}
+      
       <nav
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
           scrolled ? 'bg-white/90 backdrop-blur-md shadow-md' : 'bg-transparent'
@@ -32,7 +32,7 @@ const Navbar = () => {
           <div className="flex justify-between items-center py-4">
             <div className="text-2xl font-bold text-slate-800">Portfolio</div>
 
-            {/* Desktop Navigation */}
+            
             <div className="hidden md:flex space-x-8">
               {navItems.map((item) => (
                 <a
@@ -46,7 +46,7 @@ const Navbar = () => {
               ))}
             </div>
 
-            {/* Mobile Toggle */}
+           
             <div className="md:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
@@ -57,7 +57,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Mobile Menu */}
+          
           {isOpen && (
             <div className="md:hidden bg-white/95 backdrop-blur-md rounded-lg shadow-lg mb-4">
               <div className="px-4 py-4 space-y-3">
@@ -77,8 +77,8 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* 👇 Add this spacer to push content below navbar */}
-      <div className="h-20 md:h-20"></div>
+      
+      <div className="h-16 md:h-16"></div>
     </>
   );
 };

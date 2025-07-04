@@ -20,6 +20,7 @@ const Contact = () => {
     console.log('Form submitted:', formData);
     
   };
+  
 
   return (
     <section id="contact" className="py-20 bg-slate-50">
@@ -49,7 +50,17 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-slate-800">Phone</h3>
-                <p className="text-slate-600">+(855) 96 789 6303</p>
+                <p className="text-slate-600">+855(0) 96 789 6303</p>
+              </div>
+            </div>
+            <div className="flex items-center space-x-4">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                <Send className="w-6 h-6 text-blue-600" />
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-slate-800">Telegram</h3>
+                <p className="text-slate-600">+855(0) 96 789 6303</p>
+                
               </div>
             </div>
 

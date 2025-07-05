@@ -30,7 +30,13 @@ const Navbar = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <div className="text-2xl font-bold text-slate-800">Portfolio</div>
+            <div className="text-2xl font-bold text-slate-800"><a
+                      href=""
+                      rel="noopener noreferrer"
+                      className="  text-slate-800 transition-transform duration-200 hover:scale-110"
+                    >
+                      Portfolio
+                    </a></div>
 
             
             <div className="hidden md:flex space-x-8">

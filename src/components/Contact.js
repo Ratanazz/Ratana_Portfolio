@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -7,6 +9,10 @@ const Contact = () => {
     email: '',
     message: '',
   });
+
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
 
   const handleChange = (e) => {
     setFormData({
@@ -18,14 +24,12 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-    
   };
-  
 
   return (
     <section id="contact" className="py-20 bg-slate-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16" data-aos="fade-up" data-aos-duration="1000">
           <h2 className="text-4xl font-bold text-slate-800 mb-4">Contact Me</h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             I'm always open to discussing new opportunities and interesting projects.
@@ -33,7 +37,7 @@ const Contact = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
-          <div className="space-y-8">
+          <div className="space-y-8" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
             <div className="flex items-center space-x-4">
               <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
                 <Mail className="w-6 h-6 text-blue-600" />
@@ -58,9 +62,17 @@ const Contact = () => {
                 <Send className="w-6 h-6 text-blue-600" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-slate-800">Telegram</h3>
+                <h3 className="text-lg font-semibold text-slate-800">
+                  <a
+                    href="https://t.me/Ratanaaaaa"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-lg font-semibold text-slate-800 transition-transform duration-200 hover:scale-110"
+                  >
+                    Telegram
+                  </a>
+                </h3>
                 <p className="text-slate-600">+855(0) 96 789 6303</p>
-                
               </div>
             </div>
 
@@ -70,12 +82,18 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-slate-800">Location</h3>
-                <p className="text-slate-600">Meanchey,PhnomPenh,Cambodia</p>
+                <p className="text-slate-600">Meanchey, Phnom Penh, Cambodia</p>
               </div>
             </div>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form
+            onSubmit={handleSubmit}
+            className="space-y-6"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-2">
                 Name
@@ -131,8 +149,6 @@ const Contact = () => {
           </form>
         </div>
       </div>
-
-      
     </section>
   );
 };

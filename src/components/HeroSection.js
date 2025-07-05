@@ -30,7 +30,7 @@ function HeroSection() {
         
         <div className="w-full md:w-1/2 text-center md:text-left">
           <h1 className="text-3xl md:text-5xl font-bold mb-4">
-            Hello! <br />  I'm Chuon Chanratana
+            Hello! <br />  I'm<span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Chuon ChanRatana</span>
           </h1>
           <h2 className="text-lg md:text-2xl leading-relaxed">
             I'm a Web Developer passionate about creating sleek, responsive, and modern websites.

@@ -53,7 +53,7 @@ const Projects = () => {
     <section id="projects" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-slate-800 mb-4">Featured Projects</h2>
+          <h2 className="text-4xl font-bold text-slate-800 mb-4">Featured <span className='bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent'>Projects</span></h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             Here are some of my recent projects that showcase my skills and passion for development.
           </p>

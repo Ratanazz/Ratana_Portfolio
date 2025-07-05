@@ -12,7 +12,7 @@ const Projects = () => {
       description: 'A responsive static website for a PC hardware store built with React and Bootstrap. Showcases products, pricing, and store information with a clean, user-friendly layout.',
       image: pcstore,
       tech: ['React', 'Bootstrap'],
-      github: 'https://github.com/Ratanazz/CatHouse',
+      github: '',
       live: '',
     },
     {
@@ -27,8 +27,8 @@ const Projects = () => {
       title: 'Movie Booking',
       description: 'A full-stack movie booking system developed with React, Laravel, and MySQL. Features include user authentication, real-time seat selection, and an admin dashboard for managing movies and bookings.',
       image: moviebooking,
-      tech: ['React', 'Laravel', 'MySQL'],
-      github: 'https://github.com',
+      tech: ['React', 'Tailwind','Laravel', 'MySQL'],
+      github: 'https://github.com/Ratanazz/moviebooking_frontend',
       live: '',
     },
     {

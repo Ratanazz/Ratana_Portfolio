@@ -1,16 +1,15 @@
-import React, { useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const SkillCard = ({ name, level, index }) => {
-  const ref = useRef(null);
-  const inView = useInView(ref, { margin: '-50px', amount: 0.5 });
+  useEffect(() => {
+    AOS.init({ once: false, duration: 800 });
+  }, []);
 
   return (
-    <motion.div
-      ref={ref}
-      initial={{ x: index % 2 === 0 ? -100 : 100, opacity: 0 }}
-      animate={inView ? { x: 0, opacity: 1 } : { x: index % 2 === 0 ? -100 : 100, opacity: 0 }}
-      transition={{ duration: 0.6, ease: 'easeOut' }}
+    <div
+      data-aos={index % 2 === 0 ? 'fade-right' : 'fade-left'}
       className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
     >
       <div className="flex justify-between items-center mb-3">
@@ -23,7 +22,7 @@ const SkillCard = ({ name, level, index }) => {
           style={{ width: `${level}%` }}
         ></div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Router ,Route,Routes, BrowserRouter} from 'react-router-dom';
+import { Router ,Route,Routes} from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -11,7 +11,7 @@ function App() {
     AOS.init({ once: false, duration: 800 });
   }, []);
   return (
-    <BrowserRouter basename="/Ratana_Portfolio">
+     <>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -19,7 +19,7 @@ function App() {
         
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </>
   );
 }
 
